@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <style>
+
+        body{
+            text-align: center;
+        }
+        nav{
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        ul{
+           list-style-type: none;
+           margin: 0px;
+           padding: 0px;
+           overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a {
+              display: block;
+              margin: 10px;
+        }
+        li a:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- navber -->
+    <nav>
+        <ul>
+            <li> <a href="">Home</a> </li>
+            <li> <a href="">Contact</a> </li>
+            <li> <a href="">About</a> </li>
+        </ul>
+    </nav>
+    <!-- content for tiger -->
+     <h2>Interesting Informatoin</h2>
+     <img src="./R (8).jpeg" alt="">
+     <br/>
+     <button onclick="tiger()"> Read more....</button>
+     <p id="tiger-info"></p> 
+
+    <!-- content for lion -->
+    <img src="./wp4666087.webp" alt="">
+    <br />
+    <button onclick="lion()"> Read more....</button>
+    <p id="lion-info"></p>
+
+    <script>
+        function tiger(){
+              document.getElementById("tiger-info").innerHTML = "Tigers are the biggest cats in the wild. They have striking orange coats with black stripes, which help them blend into forests and grasslands. These powerful hunters live alone and mainly eat large animals like deer and wild boar. They're great swimmers and very protective of their territory. Tigers are endangered today because of poaching and loss of habitat. There are several types, like the Bengal and Siberian tiger, and they’re important symbols in many cultures."
+        }
+        function lion(){
+            document.getElementById("lion-info").innerHTML = "Lions are large, powerful cats known as theking of jungle though they mostly live in African grasslands. Males have thick manes, while females do most of the hunting. Unlike most big cats, lions live in groups called prides. They hunt animals like zebras and antelope. Lions rest a lot—up to 20 hours a day. Though strong and majestic, their numbers are falling due to habitat loss and conflicts with humans."
+        }
+       
+    </script>
+
+</body>
+</html>
